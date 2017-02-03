@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "yarn webpack:dev",
     "build": "webpack --watch --display-error-details",
-    "webpack:dev": "webpack-dev-server",
+    "webpack:dev": "webpack-dev-server --port 3000 --colors --history-api-fallback",
     "start": "yarn dev"
   },
   "keywords": [],
@@ -19,6 +19,13 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-react-hmre": "^1.1.1",
     "css-loader": "^0.26.1",
+    "postcss": "^5.2.11",
+    "postcss-browser-reporter": "^0.5.0",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-import": "^9.1.0",
+    "postcss-loader": "^1.2.2",
+    "postcss-reporter": "^3.0.0",
+    "postcss-url": "^5.1.2",
     "react-hot-loader": "^1.3.1",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.0",

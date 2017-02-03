@@ -1,3 +1,8 @@
+
+:root {
+    --mainColor: #f00;
+}
+
 .hogeHoge{
-    color: #f00;
+    color: var(--mainColor);
 }
