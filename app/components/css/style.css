@@ -1,7 +1,5 @@
 
-:root {
-    --mainColor: #f00;
-}
+@import './color';
 
 .hogeHoge{
     color: var(--mainColor);
