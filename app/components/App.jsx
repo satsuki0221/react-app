@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import _ from 'lodash';
-import styles from '../../css/style.css'
+import styles from './css/style.css'
 
 export default class Hello extends React.Component{
 

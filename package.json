@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "yarn webpack:dev",
     "build": "webpack --watch --display-error-details",
-    "start": "webpack-dev-server  --progress --colors --inline"
+    "webpack:dev": "webpack-dev-server",
+    "start": "yarn dev"
   },
   "keywords": [],
   "author": "",
@@ -20,9 +21,8 @@
     "css-loader": "^0.26.1",
     "react-hot-loader": "^1.3.1",
     "style-loader": "^0.13.1",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2",
-    "yarn": "^0.19.1"
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
   },
   "dependencies": {
     "lodash": "^4.17.2",

@@ -7,10 +7,10 @@ module.exports = {
     './app/index.jsx'
   ],
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
   output: {
-    path:'./',
+    path:'/',
     filename: "bundle.js"
   },
   module: {
@@ -25,7 +25,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loaders: ['style', 'css?modules'],
+        loaders: ['style-loader', 'css-loader?modules'],
       }
     ]
   },
