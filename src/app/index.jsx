@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import _ from 'lodash';
-import App from './components/App';
+import Auther from './components/module/auther/Auther';
 
 ReactDOM.render(
-  <App/>,
+  <Auther name="yugo" />,
   document.getElementById("root")
 );
