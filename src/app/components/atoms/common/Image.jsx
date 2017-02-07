@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-export default class Image extends React.Component{
+const Image = ({src, alt}) => (
+  <img src={src} alt={alt} />
+)
 
-  constructor(props) {
-    super(props);
-  }
+Image.defaultProps = {
+  alt: 'image'
+};
 
-  render(){
-    const ALT = this.props.imgalt || ''
-    return(
-      <img src={this.props.imgsrc} alt={ALT} />
-    );
-  }
-
+Image.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string
 }
+
+export default Image;

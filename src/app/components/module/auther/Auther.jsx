@@ -1,27 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Image from '../../atoms/common/Image';
-import styles from './css/style.css'
+import React, { PropTypes } from 'react';
+import Image from '@/app/components/atoms/common/Image';
+import styles from './style'
 
-export default class Auther extends React.Component{
+const Auther = ({name}) => (
+  <a href="#" className={styles.author}>
+    <span className={styles.name}>{name}</span>
+    <Image src = 'app/img/vtw2OvvL.jpg' alt = {name} />
+  </a>
+)
 
-  constructor(props) {
-    super(props);
-  }
-
-  render(){
-    const ALT = this.props.imgalt || ''
-    return(
-      <a href="#" className={styles.author}>
-        <span className={styles.name}>
-          {this.props.name}
-        </span>
-        <Image
-          imgsrc={'./app/components/module/auther/img/vtw2OvvL.jpg'}
-          imgalt="yugo"
-        />
-      </a>
-    );
-  }
-
+Auther.propTypes = {
+  name: PropTypes.string.isRequired,
 }
+
+export default Auther;

@@ -12,10 +12,10 @@ module.exports = {
     './app/index.jsx'
   ],
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx','.json', '.css']
   },
   output: {
-    path:'src',
+    path:'/',
     filename: "bundle.js"
   },
   module: {
@@ -35,6 +35,10 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': '"development"',
+      'POSTS': process.env.POSTS,
+    }),
     new webpack.HotModuleReplacementPlugin()
   ]
 };
