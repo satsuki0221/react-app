@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import _ from 'lodash';
-import Auther from './components/module/auther/Auther';
+import Meta from './components/module/meta';
 
 ReactDOM.render(
-  <Auther name="yugo" />,
+  <Meta />,
   document.getElementById("root")
 );
