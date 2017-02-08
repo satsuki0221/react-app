@@ -1,0 +1,6 @@
+
+@custom-media --xlarge ( max-width: 1680px );
+@custom-media --large ( max-width: 1280px );
+@custom-media --medium ( max-width: 980px );
+@custom-media --small ( max-width: 736px );
+@custom-media --xsmall ( max-width: 480px );

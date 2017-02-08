@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import Image from '@/app/components/atoms/common/Image';
+import Image from 'app/components/atoms/common/Image';
 import styles from './style'
 
 const Auther = ({name}) => (

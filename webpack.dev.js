@@ -1,4 +1,5 @@
-var webpack = require('webpack');
+const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
   context: __dirname + '/src',
@@ -12,7 +13,10 @@ module.exports = {
     './app/index.jsx'
   ],
   resolve: {
-    extensions: ['.js', '.jsx','.json', '.css']
+    extensions: ['.js', '.jsx','.json', '.css'],
+    alias: {
+      'app': path.resolve(__dirname,'src/app')
+    }
   },
   output: {
     path:'/',
