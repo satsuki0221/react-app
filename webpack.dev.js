@@ -10,7 +10,7 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:3000', // WebpackDevServer host and port
     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
-    './app/index.js'
+    './app/index.jsx'
   ],
   resolve: {
     extensions: ['.js', '.jsx','.json', '.css'],
@@ -25,7 +25,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /.js?$/,
+        test: /.jsx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
