@@ -1,8 +1,14 @@
+/* @flow */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Meta from './components/module/meta';
+
+import 'sanitize.css/sanitize';
+
+const Test = (props: { text: number }) => {
+  return <div>{props.text}</div>
+}
 
 ReactDOM.render(
-  <Meta />,
+  <Test text={'テスト'} />,
   document.getElementById("root")
 );

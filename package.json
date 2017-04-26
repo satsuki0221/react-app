@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.jsx",
   "scripts": {
+    "flow": "flow",
     "storybook": "start-storybook -p 6006",
     "dev": "yarn webpack:dev",
     "build": "webpack --watch --display-error-details",
@@ -15,9 +16,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@kadira/storybook": "^2.21.0",
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.21.0",
     "babel-loader": "^7.0.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-preset-es2015": "^6.18.0",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-react-hmre": "^1.1.1",
     "css-loader": "^0.26.1",
@@ -32,14 +37,14 @@
     "react-hot-loader": "^1.3.1",
     "style-loader": "^0.13.1",
     "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.4",
-    "@kadira/storybook": "^2.21.0"
+    "webpack-dev-server": "^2.4.4"
   },
   "dependencies": {
     "getstorybook": "^1.7.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-redux": "^5.0.4",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "sanitize.css": "^5.0.0"
   }
 }

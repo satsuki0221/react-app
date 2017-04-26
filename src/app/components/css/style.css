@@ -1,6 +1,0 @@
-
-@import './color';
-
-.hogeHoge{
-    color: var(--mainColor);
-}
