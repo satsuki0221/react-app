@@ -8,7 +8,7 @@
     "storybook": "start-storybook -p 6006",
     "dev": "yarn webpack:dev",
     "build": "webpack --watch --display-error-details",
-    "webpack:dev": "webpack-dev-server --config webpack.dev.js --port 3000 --colors --history-api-fallback",
+    "webpack:dev": "webpack-dev-server --config webpack.dev.js --port 9999 --colors --history-api-fallback",
     "start": "yarn dev",
     "build-storybook": "build-storybook"
   },
@@ -47,10 +47,10 @@
     "postcss-url": "^5.1.2",
     "react-hot-loader": "^1.3.1",
     "style-loader": "^0.13.1",
-    "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.4"
   },
   "dependencies": {
+    "webpack": "^2.4.1",
     "getstorybook": "^1.7.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
