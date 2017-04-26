@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.jsx",
   "scripts": {
-    "flow": "flow",
+    "flow": "flow check",
     "storybook": "start-storybook -p 6006",
     "dev": "yarn webpack:dev",
     "build": "webpack --watch --display-error-details",

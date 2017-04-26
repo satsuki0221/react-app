@@ -10,5 +10,8 @@
     "document": true,
     "fetch": true,
     "yield": true
+  },
+  "rules": {
+    "react/require-default-props": false
   }
 }

@@ -3,13 +3,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'sanitize.css';
 
-const Test = (props: {
-  text: string,
+const Test = ({ text = 'test' }: {
+  text?: string,
 }) => (
-  <div>{props.text}</div>
+  <div>{text}</div>
 );
 
 ReactDOM.render(
-  <Test text={'テスト'} />,
+  <Test />,
   document.getElementById('root'),
 );
